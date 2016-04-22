@@ -1,0 +1,19 @@
+{
+  "name": "ngtodo",
+  "version": "1.0.0",
+  "description": "The sample project implements the todo list. For demonstrating the best practice in angular2.",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ammeyjohn/ngTodo.git"
+  },
+  "author": "Patrick <ammeyjohn@qq.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ammeyjohn/ngTodo/issues"
+  },
+  "homepage": "https://github.com/ammeyjohn/ngTodo#readme"
+}
