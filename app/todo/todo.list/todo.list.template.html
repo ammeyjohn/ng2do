@@ -1,0 +1,14 @@
+<table class="table table-stripted">
+	<thead>
+		<tr>
+			<td>Id</td>
+			<td>Title</td>
+			<td>Content</td>
+		</tr>
+	</thead>
+	<tr *ngFor="#todo of todos">
+		<td>{{todo.id}}</td>
+		<td>{{todo.title}}</td>
+		<td>{{todo.content}}</td>
+	</tr>	
+</table>

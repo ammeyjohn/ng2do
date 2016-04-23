@@ -1,7 +1,13 @@
 import {Component} from 'angular2/core';
+import {NavbarComponent} from './navbar/navbar.component';
+import {TodoListComponent} from './todo/todo.list/todo.list.component';
 
 @Component({
     selector: 'todo-app',
-    template: '<pre><h1>My First Angular 2 App</h1></pre>'
+    templateUrl: 'app/app.template.html',
+    directives: [
+    	NavbarComponent,
+		TodoListComponent
+    ]
 })
 export class AppComponent { }
