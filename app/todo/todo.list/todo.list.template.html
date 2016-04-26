@@ -1,4 +1,4 @@
-<table class="table table-stripted">
+<table class="table table-hover">
 	<thead>
 		<tr>
 			<td>Id</td>
@@ -6,7 +6,8 @@
 			<td>Content</td>
 		</tr>
 	</thead>
-	<tr *ngFor="#todo of todos">
+	<tr *ngFor="#todo of todos"
+		(mouseenter)=onMouseEnter($event)>
 		<td>{{todo.id}}</td>
 		<td>{{todo.title}}</td>
 		<td>{{todo.content}}</td>

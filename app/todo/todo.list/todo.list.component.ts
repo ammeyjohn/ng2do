@@ -5,8 +5,10 @@ import {TodoService} from '../todoService';
 @Component({
     selector: 'todo-list',
     templateUrl: 'app/todo/todo.list/todo.list.template.html',
-    providers: [TodoService]
+    providers: [TodoService],
+    styles: [``]
 })
+
 export class TodoListComponent implements OnInit { 
 	todos: Todo[];
 
@@ -18,5 +20,9 @@ export class TodoListComponent implements OnInit {
 
 	getTodos() {
 		this._todoService.getTodos().then(todos => this.todos = todos);	
+	}
+
+	onMouseEnter(evt) {
+		console.log("onMouseEnter");
 	}
 }

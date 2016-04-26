@@ -8,21 +8,21 @@ export class TodoService {
 		return Promise.resolve(TODOS);
 	}
 
-	getMaxTodoId() {
-		return new Promise(function(resolve, reject){
+	getNewTodoId() {
+		return new Promise(function(resolve, reject) {
 			let maxId = 0;
-			for(var todo of TODOS) {
-				if(todo.id > maxId) {
+			for (var todo of TODOS) {
+				if (todo.id > maxId) {
 					maxId = todo.id;
 				}
 			}
-			resolve(maxId);
+			resolve(maxId + 1);
 		});
 	}
 
 	setTodo(todo) {
-		this.getMaxTodoId().then(function(maxId) {
-			var copied = Object.assign({ id: maxId+1 }, todo);
+		this.getNewTodoId().then(newId => {			
+			let copied = Object.assign({ id: newId }, todo);
 			TODOS.push(copied);
 		});
 	}
