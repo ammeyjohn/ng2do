@@ -1,14 +1,14 @@
 {
-  "name": "ngtodo",
+  "name": "ng2do",
   "version": "1.0.0",
   "description": "The sample project implements the todo list. For demonstrating the best practice in angular2.",
   "main": "index.js",
   "author": "Patrick <ammeyjohn@qq.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ammeyjohn/ngTodo/issues"
+    "url": "https://github.com/ammeyjohn/ng2do/issues"
   },
-  "homepage": "https://github.com/ammeyjohn/ngTodo#readme",
+  "homepage": "https://github.com/ammeyjohn/ng2do#readme",
   "scripts": {
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "tsc": "tsc",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ammeyjohn/ngTodo.git"
+    "url": "git+https://github.com/ammeyjohn/ng2do.git"
   },
   "dependencies": {
     "angular2": "2.0.0-beta.15",

@@ -1,4 +1,5 @@
 import {Injectable} from 'angular2/core';
+import {Todo}		from './Todo';
 import {TODOS} 		from './mock-todos';
 
 @Injectable()
@@ -6,6 +7,10 @@ export class TodoService {
 
 	getTodos() {
 		return Promise.resolve(TODOS);
+	}
+
+	getTodosCount() {
+		return Promise.resolve(TODOS.length);
 	}
 
 	getNewTodoId() {
@@ -20,10 +25,11 @@ export class TodoService {
 		});
 	}
 
-	setTodo(todo) {
+	setTodo(content) {
 		this.getNewTodoId().then(newId => {			
-			let copied = Object.assign({ id: newId }, todo);
-			TODOS.push(copied);
+			let todo = new Todo(newId, content);
+			TODOS.push(todo);
+			console.log(TODOS);
 		});
 	}
 }

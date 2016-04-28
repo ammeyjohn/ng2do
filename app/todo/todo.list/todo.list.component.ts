@@ -21,8 +21,4 @@ export class TodoListComponent implements OnInit {
 	getTodos() {
 		this._todoService.getTodos().then(todos => this.todos = todos);	
 	}
-
-	onMouseEnter(evt) {
-		console.log("onMouseEnter");
-	}
 }

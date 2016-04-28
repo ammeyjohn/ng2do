@@ -9,13 +9,13 @@ import {TodoService} 		from '../todoService';
 })
 export class TodoEditComponent {
 
-	todo: Todo = new Todo();
+	// todo: Todo = new Todo();
 
-	constructor(private _todoService: TodoService) {}
+	// constructor(private _todoService: TodoService) {}
 
-	onSubmit() {
-		this._todoService.setTodo(this.todo);
-		this.todo = new Todo();
-	}
+	// onSubmit() {
+	// 	this._todoService.setTodo(this.todo);
+	// 	this.todo = new Todo();
+	// }
 
 }

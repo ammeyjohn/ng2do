@@ -1,5 +1,10 @@
 <section class="todo-new">
 	<form>
-		<input placeholder="What needs to be done?" />
+		<input placeholder="What needs to be done?" 
+			   [(ngModel)]="todo"
+			   (keypress)="addTodo($event)"/>
 	</form>
+</section>
+<section *ngIf="_todoService.getTodosCount() > 0">
+	<todo-list></todo-list>
 </section>
